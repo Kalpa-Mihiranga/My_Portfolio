@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalpa Mihiranga | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <header>
+  <!-- Neon vertical line -->
+  <div class="neon-line"></div>
+
+  <!-- Sidebar name/logo -->
+  <h1></h1> 
+
+ 
+<!-- Sidebar navigation -->
+<!-- Hamburger button (for mobile) -->
+<button id="hamburger" class="hamburger">☰</button>
+
+<!-- Sidebar navigation -->
+<nav id="navMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+  <button id="themeToggle">🌙</button>
+</nav>
+
+
+<!-- Sidebar contact links at bottom -->
+<div class="sidebar-contact-bottom">
+  <a href="tel:0740662500" title="Call Me">📞 0740662500</a>
+  <a href="mailto:yourmail@example.com" title="Email Me">📧 Email</a>
+  <a href="https://www.linkedin.com/in/kalpa-mihiranga" target="_blank" title="LinkedIn">🔗 LinkedIn</a>
+  <a href="https://github.com/Kalpa-Mihiranga" target="_blank" title="GitHub">💻 GitHub</a>
+</div>
+
+
+</header>
+
+
+  <!-- Main content -->
+  <main class="content">
+   <section class="hero">
+  <div class="profile-pic-container">
+    <img src="me.jpg" alt="Kalpa Mihiranga" class="profile-pic" />
+    <div class="streak streak1"></div>
+    <div class="streak streak2"></div>
+    <div class="streak streak3"></div>
+  </div>
+
+  <div class="hero-text">
+    <h1 class="neon-name">Kalpa Mihiranga</h1>
+    <h2>Full-Stack Developer</h2>
+    <p>Web Developer | Software Engineering Undergraduate – NIBM</p>
+     <a href="CV.pdf" download class="cv-button">📄 Download CV</a>
+  </div>
+</section>
+
+
+    <section id="about" class="card about-section animate">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      I am a <span class="neon-highlight">passionate software engineering undergraduate</span> at NIBM with a strong
+      interest in <span class="neon-highlight">full-stack and web development</span>. I enjoy building modern,
+      efficient, and user-friendly applications that solve real-world problems.
+    </p>
+
+    <p>
+      My expertise spans <span class="neon-highlight">front-end</span> technologies such as HTML, CSS,
+      JavaScript, and React, as well as <span class="neon-highlight">back-end development</span> with Node.js,
+      Spring Boot, and database systems like MySQL and MongoDB. I also use <span class="neon-highlight">Git & GitHub</span>
+      for clean and collaborative workflows.
+    </p>
+
+    <p>
+      I am a problem solver, enjoy collaborating in teams, and thrive on turning ideas into tangible projects.
+      My goal is to contribute to <span class="neon-highlight">meaningful projects</span> while continuously growing as a tech professional.
+    </p>
+  </div>
+
+</section>
+
+
+
+<section id="skills" class="card animate-left">
+  <h2>Skills</h2>
+  <ul class="grid">
+    <li>💻 HTML / CSS / JavaScript</li>
+    <li>⚛️ React</li>
+    <li>🖥️ Node.js</li>
+    <li>🗄️ MySQL / MongoDB</li>
+    <li>🔧 Git & GitHub</li>
+    <li>🎨 UI/UX Design</li>
+    <li>🐍 Python</li>
+    <li>🌱 Spring Boot</li>
+  </ul>
+</section>
+
+
+
+   <section id="projects" class="card animate-right">
+  <h2>Projects</h2>
+  <div class="grid">
+    
+
+    <div class="project" 
+     data-title="CITF - Charity System" 
+     data-desc="<ul>
+                  <li>Manage charity organizations, donors, and volunteers</li>
+                  <li>Donation tracking with dashboards</li>
+                  <li>User-friendly interface for admins and volunteers</li>
+                  <li>Built with React, Node.js, and MongoDB</li>
+                </ul>" 
+     data-link="https://github.com/Kalpa-Mihiranga/citfweb"
+     data-live="https://citf.org.lk/index.html">
+  CITF - Charity System
+</div>
+
+<div class="project" 
+     data-title="Pizza Mania Mobile App" 
+     data-desc="<ul>
+                  <li>Order pizzas online and track delivery in real-time</li>
+                  <li>Menu management with admin panel</li>
+                  <li>Responsive design for mobile and web</li>
+                  <li>Built with React, Node.js, and Firebase</li>
+                </ul>" 
+     data-link="https://github.com/Kalpa-Mihiranga/MADCW_Pizza-Mania">
+  Pizza Mania Mobile App
+</div>
+
+<div class="project" 
+     data-title="IoT-Based Smart Harbour System" 
+     data-desc="<ul>
+                  <li>Monitor ship positions and security in real-time</li>
+                  <li>Smart lighting and sensor management</li>
+                  <li>Alerts for unauthorized access or issues</li>
+                  <li>Built with Arduino, Node.js, and IoT sensors</li>
+                </ul>" 
+     data-link="https://github.com/Kalpa-Mihiranga/Smart-Harbour-System_IOT"
+     data-live="https://pereramihirangakalpa-hue.github.io/smart-harbour-system/">
+  IoT-Based Smart Harbour System
+</div>
+
+<div class="project" 
+     data-title="Library System - Web" 
+     data-desc="<ul>
+                  <li>Track books, borrowing, and returns</li>
+                  <li>User management for students and librarians</li>
+                  <li>Search and filter books easily</li>
+                  <li>Built with React, Node.js, and MySQL</li>
+                </ul>" 
+     data-link="https://github.com/Kalpa-Mihiranga/Library_System">
+  Library System - Web
+</div>
+
+  </div>
+</section>
+
+<!-- Modal for project details -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <a href="#" target="_blank" id="modalLink" class="git-link">View on GitHub</a>
+    <a href="#" target="_blank" id="modalLive" class="git-link">View Live Site</a>
+  </div>
+</div>
+
+
+    <section id="certificates" class="card animate-left">
+  <h2>Certificates</h2>
+  <ul class="cert-list">
+    <li>💻 Web Development – NIBM</li>
+    <li>🐍 Python Programming</li>
+    <li>🗄️ Database Fundamentals</li>
+  </ul>
+</section>
+
+
+    <section id="contact" class="card">
+  <h2>Contact</h2>
+  <p>Feel free to reach out for collaborations or projects!</p>
+
+  <form id="contactForm" action="https://formspree.io/f/xqeekrnk" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+ <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/94740662500" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+  💬
+</a>
+
+
+    <footer>
+      <p>© 2026 Kalpa Mihiranga</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
